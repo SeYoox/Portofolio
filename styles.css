@@ -40,6 +40,12 @@ a {
   color: inherit;
   text-decoration: none;
 }
+.profile-img {
+  width: 100%;
+  height: auto;
+  border-radius: 22px;
+  object-fit: cover;
+}
 
 .container {
   max-width: var(--max-width);
