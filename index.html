@@ -76,7 +76,7 @@
         <div class="hero-photo">
           <!-- Ganti dengan foto kamu (rasio 1:1 ideal) -->
           <div class="photo-placeholder">
-            <img src="profile.jpg" alt="Foto Profil" class="profile-img">
+            <img src="profile.jpg" alt="Foto Profil" class="hero-photo">
           </div>
         </div>
         <div class="hero-card-body">
@@ -306,12 +306,13 @@
       </div>
 
       <div class="contact-grid">
-        <form class="contact-form">
+        <form class="contact-form" action="https://formspree.io/f/mjkqblwe" method="POST">
           <!--
             NOTE:
             - Untuk produksi, kamu bisa pakai Formspree, Getform, dll.
             - Contoh: action="https://formspree.io/f/xxxxxxx" method="POST"
           -->
+          
           <div class="form-group">
             <label for="name">Nama Lengkap</label>
             <input type="text" id="name" name="name" placeholder="Masukkan nama kamu" required />
