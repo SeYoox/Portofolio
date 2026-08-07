@@ -26,6 +26,15 @@
          </audio>
         <button onclick="playAudio()" type="button">Play Audio</button>
         <button onclick="pauseAudio()" type="button">Pause Audio</button> 
+        <script>
+var x = document.getElementById("myAudio"); 
+function playAudio() { 
+  x.play(); 
+} 
+function pauseAudio() { 
+  x.pause(); 
+} 
+</script>
       </div>
 
       <nav class="nav-links" id="navLinks">
@@ -43,15 +52,7 @@
     </div>
   </header>
   
-<script>
-var x = document.getElementById("myAudio"); 
-function playAudio() { 
-  x.play(); 
-} 
-function pauseAudio() { 
-  x.pause(); 
-} 
-</script>
+
   
   <!-- HERO / BERANDA -->
   <section id="hero" class="hero">
