@@ -8,19 +8,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<!--  
-  <audio src="Tulus_JatuhSuka.mp3" preload="metadata" autoplay loop muted>
-  -->
-  <iframe src="Tulus_JatuhSuka.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+  <audio id="myAudio" src="Tulus_JatuhSuka.mp3" preload="metadata" autoplay loop muted>
 </audio>
 </head>
 <body>
   <!-- NAVBAR -->
   <header class="navbar">
-     <audio id="player" preload="auto" autoplay loop>
-            <source src="Tulus_JatuhSuka.mp3" type="audio/mp3">
-    </audio>
-   
     <div class="container nav-content">
       <div class="logo">
         <div class="logo-mark">
@@ -30,6 +23,8 @@
           <span class="logo-title">Daffa Rasendriya A.</span>
           <span class="logo-subtitle">Mahasiswa Farmasi</span>
         </div>
+        <button onclick="playAudio()" type="button">Play Audio</button>
+        <button onclick="pauseAudio()" type="button">Pause Audio</button> 
       </div>
 
       <nav class="nav-links" id="navLinks">
@@ -46,7 +41,17 @@
       </button>
     </div>
   </header>
-
+  
+<script>
+var x = document.getElementById("myAudio"); 
+function playAudio() { 
+  x.play(); 
+} 
+function pauseAudio() { 
+  x.pause(); 
+} 
+</script>
+  
   <!-- HERO / BERANDA -->
   <section id="hero" class="hero">
     <div class="container hero-grid">
